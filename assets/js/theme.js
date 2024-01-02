@@ -29,7 +29,7 @@
      */
 
     /**
-     * Constants
+     * Constantsassets/img/map/marker-icon.png
      */
 
     const elementMap = new Map();
