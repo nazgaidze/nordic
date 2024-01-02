@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+  <head>
+    <meta charset="utf-8">
+
+    <!-- Viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover">
+    
+    <!-- SEO meta tags -->
+    <title>Global Commodities: Oil, Fertilizers, Wooden Panels | Nordic Element Trade</title>
+    <meta name="description" content="Connect with Nordic Element Trade for a premium supply of oil products, fertilizers, and wooden panels. Efficient, sustainable, and global solutions.">
+    <meta name="robots" content="noindex, nofollow">
+
+
+    <!-- Webmanifest + Favicon / App icons -->
+    <link rel="manifest" href="/manifest.json">
+    <link rel="icon" type="image/png" href="assets/app-icons/icon-32x32.png" sizes="32x32">
+    <link rel="apple-touch-icon" href="assets/app-icons/icon-180x180.png">
+        
+    <!-- Theme switcher (color modes) -->
+    <script src="assets/js/theme-switcher.js"></script>
+
+    <!-- Import Google font (Inter) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet" id="google-font">
+
+    <!-- Vendor styles -->
+    <link rel="stylesheet" media="screen" href="assets/vendor/swiper/swiper-bundle.min.css">
+
+    <!-- Font icons -->
+    <link rel="stylesheet" href="assets/icons/around-icons.min.css">
+
+    <!-- Theme styles + Bootstrap -->
+    <link rel="stylesheet" media="screen" href="assets/css/theme.min.css">
+
+    <!-- Page loading styles -->
+    <style>
+      .page-loading {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        -webkit-transition: all .4s .2s ease-in-out;
+        transition: all .4s .2s ease-in-out;
+        background-color: #fff;
+        opacity: 0;
+        visibility: hidden;
+        z-index: 9999;
+      }
+      [data-bs-theme="dark"] .page-loading {
+        background-color: #121519;
+      }
+      .page-loading.active {
+        opacity: 1;
+        visibility: visible;
+      }
+      .page-loading-inner {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+        -webkit-transition: opacity .2s ease-in-out;
+        transition: opacity .2s ease-in-out;
+        opacity: 0;
+      }
+      .page-loading.active > .page-loading-inner {
+        opacity: 1;
+      }
+      .page-loading-inner > span {
+        display: block;
+        font-family: "Inter", sans-serif;
+        font-size: 1rem;
+        font-weight: normal;
+        color: #6f788b;
+      }
+      [data-bs-theme="dark"] .page-loading-inner > span {
+        color: #fff;
+        opacity: .6;
+      }
+      .page-spinner {
+        display: inline-block;
+        width: 2.75rem;
+        height: 2.75rem;
+        margin-bottom: .75rem;
+        vertical-align: text-bottom;
+        background-color: #d7dde2; 
+        border-radius: 50%;
+        opacity: 0;
+        -webkit-animation: spinner .75s linear infinite;
+        animation: spinner .75s linear infinite;
+      }
+      [data-bs-theme="dark"] .page-spinner {
+        background-color: rgba(255,255,255,.25);
+      }
+      @-webkit-keyframes spinner {
+        0% {
+          -webkit-transform: scale(0);
+          transform: scale(0);
+        }
+        50% {
+          opacity: 1;
+          -webkit-transform: none;
+          transform: none;
+        }
+      }
+      @keyframes spinner {
+        0% {
+          -webkit-transform: scale(0);
+          transform: scale(0);
+        }
+        50% {
+          opacity: 1;
+          -webkit-transform: none;
+          transform: none;
+        }
+      }
+    </style>
+
+    <!-- Page loading scripts -->
+    <script>
+      (function () {
+        window.onload = function () {
+          const preloader = document.querySelector('.page-loading')
+          preloader.classList.remove('active')
+          setTimeout(function () {
+            preloader.remove()
+          }, 1500)
+        }
+      })()
+    </script>
+  </head>
+
+
+  <!-- Body -->
+  <body>
+
+
+    <!-- Page loading spinner -->
+    <div class="page-loading active">
+      <div class="page-loading-inner">
+        <div class="page-spinner"></div>
+        <span>Loading...</span>
+      </div>
+    </div>
+
+
+    <!-- Search modal -->
+    <div class="modal fade" id="searchModal" tabindex="-1" role="dialog" data-focus-input="#search">
+      <div class="modal-dialog modal-dialog-scrollable" role="document">
+        <div class="modal-content">
+          <div class="modal-header d-block position-relative border-0 pb-3">
+            <form class="position-relative w-100 mt-2 mb-4">
+              <button class="btn-close position-absolute top-50 end-0 translate-middle-y m-0 me-n1" type="reset" data-bs-dismiss="modal" aria-label="Close"></button>
+              <i class="ai-search fs-xl position-absolute top-50 start-0 translate-middle-y ms-3"></i>
+              <input class="form-control form-control-lg px-5" type="search" placeholder="Type to search" data-focus-on-open='["modal", "#searchModal"]'>
+            </form>
+            <div class="fs-xs fw-medium text-body-secondary text-uppercase">Suggestions</div>
+          </div>
+          <div class="modal-body pt-3">
+            <div class="d-flex align-items-center border-bottom pb-4 mb-4">
+              <a class="position-relative d-inline-block flex-shrink-0 bg-secondary rounded-1" href="shop-single.html">
+                <span class="badge bg-success position-absolute top-0 start-100 translate-middle ms-n1">Shop</span>
+                <img src="assets/img/shop/cart/01.png" width="90" alt="Product">
+              </a>
+              <div class="ps-3">
+                <h4 class="h6 mb-2">
+                  <a href="shop-single.html">Candle in concrete bowl</a>
+                </h4>
+                <span class="mb-0 me-2">$11.00</span>
+                <del class="fs-sm text-body-secondary ms-auto">$15.00</del>
+              </div>
+            </div>
+            <div class="d-flex align-items-center border-bottom pb-4 mb-4">
+              <a class="position-relative d-inline-block flex-shrink-0" href="#">
+                <span class="badge bg-info position-absolute top-0 start-100 translate-middle ms-n1">Blog</span>
+                <img class="rounded-1" src="assets/img/landing/shop-1/instagram/02.jpg" width="90" alt="Post">
+              </a>
+              <div class="ps-3">
+                <h4 class="h6 mb-0">
+                  <a href="#">Bedroom decoration explained. Tips &amp; tricks from the field experts.</a>
+                </h4>
+              </div>
+            </div>
+            <div class="d-flex align-items-center">
+              <a class="position-relative d-inline-block flex-shrink-0 bg-secondary rounded-1" href="shop-single.html">
+                <span class="badge bg-success position-absolute top-0 start-100 translate-middle ms-n1">Shop</span>
+                <img src="assets/img/shop/cart/02.png" width="90" alt="Product">
+              </a>
+              <div class="ps-3">
+                <h4 class="h6 mb-2">
+                  <a href="shop-single.html">Exquisite glass vase</a>
+                </h4>
+                <span class="mb-0 me-2">$23.00</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Cart offcanvas -->
+    <div class="offcanvas offcanvas-end py-2 p-sm-4 p-md-5" id="cartOffcanvas" style="width: 680px;">
+
+      <!-- Title -->
+      <div class="px-4 pt-3">
+        <div class="d-flex justify-content-between align-items-center border-bottom pb-3 pb-sm-4">
+          <h2 class="offcanvas-title d-flex align-items-center mb-1">
+            Your cart <span class="fs-base fw-normal text-body-secondary ms-3">(3 items)</span>
+          </h2>
+          <button class="btn-close mb-1 me-n1" type="button" data-bs-dismiss="offcanvas" data-bs-target="#cartOffcanvas" aria-label="Close"></button>
+        </div>
+      </div>
+
+      <!-- Body -->
+      <div class="offcanvas-body">
+
+        <!-- Item -->
+        <div class="d-sm-flex align-items-center pb-4"><a class="d-inline-block flex-shrink-0 bg-secondary rounded-1 p-sm-2 p-md-3 mb-2 mb-sm-0" href="shop-single.html"><img src="assets/img/shop/cart/01.png" width="110" alt="Product"></a>
+          <div class="w-100 pt-1 ps-sm-4">
+            <div class="d-flex">
+              <div class="me-3">
+                <h3 class="h5 mb-2">
+                  <a href="shop-single.html">Candle in concrete bowl</a>
+                </h3>
+                <div class="d-flex flex-wrap">
+                  <div class="text-body-secondary fs-sm me-3">
+                    Color: <span class="text-dark fw-medium">Gray night</span>
+                  </div>
+                  <div class="text-body-secondary fs-sm me-3">
+                    Weight: <span class="text-dark fw-medium">140g</span>
+                  </div>
+                </div>
+              </div>
+              <div class="text-end ms-auto">
+                <div class="fs-5 mb-2">$11.00</div>
+                <del class="text-body-secondary ms-auto">$15.00</del>
+              </div>
+            </div>
+            <div class="count-input ms-n3">
+              <button class="btn btn-icon fs-xl" type="button" data-decrement>-</button>
+              <input class="form-control" type="number" value="2" readonly>
+              <button class="btn btn-icon fs-xl" type="button" data-increment>+</button>
+            </div>
+            <div class="nav justify-content-end mt-n5 mt-sm-n3">
+              <a class="nav-link fs-xl p-2" href="#" data-bs-toggle="tooltip" title="Remove" aria-label="Remove">
+                <i class="ai-trash"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item -->
+        <div class="d-sm-flex align-items-center border-top py-4">
+          <a class="d-inline-block flex-shrink-0 bg-secondary rounded-1 p-sm-2 p-md-3 mb-2 mb-sm-0" href="shop-single.html">
+            <img src="assets/img/shop/cart/02.png" width="110" alt="Product">
+          </a>
+          <div class="w-100 pt-1 ps-sm-4">
+            <div class="d-flex">
+              <div class="me-3">
+                <h3 class="h5 mb-2">
+                  <a href="shop-single.html">Exquisite glass vase</a>
+                </h3>
+              </div>
+              <div class="text-end ms-auto">
+                <div class="fs-5 mb-2">$23.00</div>
+              </div>
+            </div>
+            <div class="count-input ms-n3">
+              <button class="btn btn-icon fs-xl" type="button" data-decrement>-</button>
+              <input class="form-control" type="number" value="1" readonly>
+              <button class="btn btn-icon fs-xl" type="button" data-increment>+</button>
+            </div>
+            <div class="nav justify-content-end mt-n5 mt-sm-n3">
+              <a class="nav-link fs-xl p-2" href="#" data-bs-toggle="tooltip" title="Remove" aria-label="Remove">
+                <i class="ai-trash"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item -->
+        <div class="d-sm-flex align-items-center border-top pt-4">
+          <a class="d-inline-block flex-shrink-0 bg-secondary rounded-1 p-sm-2 p-md-3 mb-2 mb-sm-0" href="shop-single.html">
+            <img src="assets/img/shop/cart/03.png" width="110" alt="Product">
+          </a>
+          <div class="w-100 pt-1 ps-sm-4">
+            <div class="d-flex">
+              <div class="me-3">
+                <h3 class="h5 mb-2">
+                  <a href="shop-single.html">Set for a dinner party of 7 items</a>
+                </h3>
+              </div>
+              <div class="text-end ms-auto">
+                <div class="fs-5 mb-2">$47.00</div>
+              </div>
+            </div>
+            <div class="count-input ms-n3">
+              <button class="btn btn-icon fs-xl" type="button" data-decrement>-</button>
+              <input class="form-control" type="number" value="1" readonly>
+              <button class="btn btn-icon fs-xl" type="button" data-increment>+</button>
+            </div>
+            <div class="nav justify-content-end mt-n5 mt-sm-n3">
+              <a class="nav-link fs-xl p-2" href="#" data-bs-toggle="tooltip" title="Remove" aria-label="Remove">
+                <i class="ai-trash"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Coupon input + Total -->
+      <div class="px-4 pb-3 pb-sm-4 pb-sm-5">
+        <div class="d-sm-flex align-items-center border-top pt-4">
+          <div class="input-group input-group-sm border-dashed mb-3 mb-sm-0 me-sm-4 me-md-5">
+            <input class="form-control text-uppercase" type="text" placeholder="Your coupon code">
+            <button class="btn btn-secondary" type="button">Apply coupon</button>
+          </div>
+          <div class="d-flex align-items-center justify-content-center">
+            <span class="fs-xl me-3">Total:</span>
+            <span class="h3 mb-0">$92.00</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Action buttons -->
+      <div class="d-flex align-items-center justify-content-between px-4 pb-3">
+        <div class="nav d-none d-sm-block">
+          <a class="nav-link fw-semibold px-0" href="#cartOffcanvas" data-bs-dismiss="offcanvas">
+            <i class="ai-chevron-left fs-xl me-2"></i>
+            Back to shop
+          </a>
+        </div>
+        <a class="btn btn-lg btn-primary w-100 w-sm-auto" href="shop-checkout.html">
+          Proceed to checkout
+          <i class="ai-chevron-right ms-2 me-n1"></i>
+        </a>
+      </div>
+    </div>
+    
+
+    <!-- Page wrapper -->
+    <main class="page-wrapper">
+
+      <!-- Navbar. Remove 'fixed-top' class to make the navigation bar scrollable with the page -->
+      <my-header></my-header>
+
+      <!-- Hero -->
+      <section>
+        <div class="jarallax bg-dark min-vh-100 py-5" data-jarallax data-type="scroll-opacity" data-speed="0.7">
+          <div class="position-absolute top-0 start-0 w-100 h-100 bg-black opacity-10"></div>
+          <div class="jarallax-img" style="background-image: url(assets/img/bg1.webp);"></div>
+          <div class="container position-relative z-5 py-sm-4 py-lg-5 mt-4">
+
+            <!-- Text + button -->
+            <div class="row pt-lg-2 py-xl-4 py-xxl-5 mb-md-4 mb-lg-5">
+              <div class="col-md-10 col-lg-9 col-xl-8 col-xxl-7 pt-2 mb-5">
+                <h1 class="display-3 text-light text-uppercase pb-sm-2 pb-md-3">Connecting Vital Commodities to the Global Market</h1>
+                <p class="text-light opacity-70 pb-3 pb-md-4 mb-3" style="max-width: 520px;">At Nordic Element Trade, we specialize in bridging the gap between producers and consumers of essential commodities. Our expertise lies in the efficient and responsible supply of oil products, fertilizers, and wooden panels to meet the growing global demand.</p><a class="btn btn-outline-light" href="#product-categories">Explore Our Products</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- About -->
+      <section class="container py-5 my-lg-3 my-xl-4 my-xxl-5">
+        <div class="row pt-2 py-md-4">
+          <div class="col-lg-10 col-xl-9">
+            <p class="lead text-dark pb-md-2 pb-lg-3 mb-2">Nordic Element Trade stands at the forefront of the commodities trade industry, dedicated to providing top-quality materials to our global clientele. With a focus on sustainability and market expertise, we ensure the smooth delivery of vital resources.</p>
+            <a class="btn btn-lg btn-link px-0" href="about-us/">
+              Learn more
+              <i class="ai-arrow-right ms-2"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+
+           <!-- Product categories -->
+          <section id="product-categories" class="container mt-n3 mt-sm-0 pb-5 mb-1 mb-sm-2 mb-lg-3 mb-xl-4 mb-xxl-5">
+            <h2 class="h1 pb-3 mb-lg-4">Product categories</h2>
+            <div class="row g-4 pb-2 pb-md-4">
+                <!-- First Category -->
+                <div class="col-md-4">
+                    <div class="card zoom-effect h-100 border-0 rounded-1 overflow-hidden" style="min-height: 320px;">
+                        <span class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-10 z-2"></span>
+                        <div class="zoom-effect-wrapper rounded-1 position-absolute top-0 start-0 w-100 h-100">
+                            <div class="zoom-effect-img bg-size-cover bg-position-bottom-center position-absolute top-0 start-0 w-100 h-100 opacity-85" style="background-image: url(assets/img/oil-products.webp);"></div>
+                        </div>
+                        <a class="card-body d-flex flex-column justify-content-end align-items-start position-absolute top-0 start-0 w-100 h-100 text-decoration-none z-3" href="/commodities/bitumen/">
+                            <span class="bg-light text-dark rounded-pill fs-sm fw-semibold lh-1 py-3 px-4">Oil Products</span>
+                        </a>
+                    </div>
+                </div>
+        
+                <!-- Second Category -->
+                <div class="col-md-4">
+                    <div class="card zoom-effect border-0 rounded-1 overflow-hidden" style="min-height: 320px;">
+                        <span class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-10 z-2"></span>
+                        <div class="zoom-effect-wrapper rounded-1 position-absolute top-0 start-0 w-100 h-100">
+                          <div class="zoom-effect-img bg-size-cover bg-position-bottom-center position-absolute top-0 start-0 w-100 h-100 opacity-85" style="background-image: url(assets/img/fertilizers.webp);"></div>
+                      </div>
+                        <a class="card-body d-flex flex-column justify-content-end align-items-start position-absolute top-0 start-0 w-100 h-100 text-decoration-none z-3" href="/commodities/fertilizers/">
+                            <span class="bg-light text-dark rounded-pill fs-sm fw-semibold lh-1 py-3 px-4">Fertilizers</span>
+                        </a>
+                    </div>
+                </div>
+        
+                <!-- Third Category -->
+                <div class="col-md-4">
+                    <div class="card zoom-effect border-0 rounded-1 overflow-hidden" style="min-height: 320px;">
+                        <span class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-10 z-2"></span>
+                        <div class="zoom-effect-wrapper rounded-1 position-absolute top-0 start-0 w-100 h-100">
+                          <div class="zoom-effect-img bg-size-cover bg-position-bottom-center position-absolute top-0 start-0 w-100 h-100 opacity-85" style="background-image: url(assets/img/wooden-panels.webp);"></div>
+                      </div>
+                        <a class="card-body d-flex flex-column justify-content-end align-items-start position-absolute top-0 start-0 w-100 h-100 text-decoration-none z-3" href="/commodities/finnish-wooden-panels/">
+                            <span class="bg-light text-dark rounded-pill fs-sm fw-semibold lh-1 py-3 px-4">Wooden Panels</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+
+
+      <!-- Trending Products -->
+            <!-- Trending products (carousel) -->
+            <section class="container pb-5 mb-lg-3 mb-xl-4 mb-xxl-5">
+              <div class="d-flex align-items-center justify-content-between pb-4 mb-2 mb-md-3">
+                <h2 class="h1 pt-1 mb-0">Trending products</h2>
+      
+                <!-- Slider prev/next buttons -->
+                <div class="d-flex">
+                  <button class="btn btn-prev btn-icon btn-sm btn-outline-primary rounded-circle ms-3" type="button" id="trending-prev" aria-label="Prev">
+                    <i class="ai-arrow-left"></i>
+                  </button>
+                  <button class="btn btn-next btn-icon btn-sm btn-outline-primary rounded-circle ms-3" type="button" id="trending-next" aria-label="Next">
+                    <i class="ai-arrow-right"></i>
+                  </button>
+                </div>
+              </div>
+      
+              <!-- Slider (popular items) -->
+              <div class="swiper" data-swiper-options='{
+                "slidesPerView": 1,
+                "spaceBetween": 24,
+                "loop": true,
+                "navigation": {
+                  "prevEl": "#trending-prev",
+                  "nextEl": "#trending-next"
+                },
+                "breakpoints": {
+                  "500": {
+                    "slidesPerView": 2
+                  },
+                  "768": {
+                    "slidesPerView": 3
+                  },
+                  "1000": {
+                    "slidesPerView": 4
+                  }
+                }
+              }'>
+                <div class="swiper-wrapper">
+      
+                  <!-- Item -->
+                  <div class="swiper-slide">
+                    <div class="col text-center pt-2">
+                      <a class="card-lifted d-inline-block text-decoration-none" href="/commodities/fertilizers/">
+                        <img class="card-hover card-lifted d-block rounded-5 mb-3" src="assets/img/gas-granulated-sulphur.webp" width="340" alt="Gas Granulated Sulfur">
+                        <h3 class="h6 mb-0">Gas Granulated Sulphur</h3>
+                        <!-- <p class="mb-0 text-body-secondary">Women's practices</p> -->
+                      </a>
+                    </div>
+                  </div>
+
+                
+      
+                  <!-- Item -->
+                  <div class="swiper-slide">
+                    <div class="col text-center pt-2">
+                      <a class="card-lifted d-inline-block text-decoration-none" href="/commodities/fertilizers/">
+                        <img class="card-hover card-lifted d-block rounded-5 mb-3" src="assets/img/sulphur-bentonite.webp" width="340" alt="Sulphur Bentonite">
+                        <h3 class="h6 mb-0">Sulphur Bentonite</h3>
+                        <!-- <p class="mb-0 text-body-secondary">Women's practices</p> -->
+                      </a>
+                    </div>
+                  </div>
+      
+                  <!-- Item -->
+                    <div class="swiper-slide">
+                      <div class="col text-center pt-2">
+                        <a class="card-lifted d-inline-block text-decoration-none" href="/commodities/bitumen/">
+                          <img class="card-hover card-lifted d-block rounded-5 mb-3" src="assets/img/bitumen.webp" width="340" alt="Bitumen 70/100">
+                          <h3 class="h6 mb-0">Bitumen 70/100</h3>
+                          <!-- <p class="mb-0 text-body-secondary">Women's practices</p> -->
+                        </a>
+                      </div>
+                  </div>
+      
+                  <!-- Item -->
+                  <div class="swiper-slide">
+                    <div class="col text-center pt-2">
+                      <a class="card-lifted d-inline-block text-decoration-none" href="/commodities/bitumen/">
+                        <img class="card-hover card-lifted d-block rounded-5 mb-3" src="assets/img/bitumen-2.webp" width="340" alt="Bitumen 70/100">
+                        <h3 class="h6 mb-0">Modified Bitumen</h3>
+                        <!-- <p class="mb-0 text-body-secondary">Women's practices</p> -->
+                      </a>
+                    </div>
+                  </div>
+      
+                  <!-- Item -->
+                  <div class="swiper-slide">
+                    <div class="col text-center pt-2">
+                      <a class="card-lifted d-inline-block text-decoration-none" href="/commodities/finnish-wooden-panels/">
+                        <img class="card-hover card-lifted d-block rounded-5 mb-3" src="assets/img/wooden-panels-2.webp" width="340" alt="Wooden Panels">
+                        <h3 class="h6 mb-0">Wooden Panels</h3>
+                        <!-- <p class="mb-0 text-body-secondary">Women's practices</p> -->
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- View all button -->
+              <div class="text-center mt-2 mt-md-0 mb-xxl-2 pt-4 pt-md-5 pb-2 pb-sm-3 pb-md-4">
+                <!-- <a class="btn btn-outline-primary w-100 w-sm-auto" href="shop-catalog.html">View all products</a> -->
+              </div>
+            </section>
+
+      <!-- Parallax image -->
+      <section>
+      <div class="jarallax" data-jarallax data-speed="0.6">
+        <div class="jarallax-img" style="background-image: url(assets/img/bitumen-parallax.webp);"></div>
+        <div class="d-none d-xxl-block" style="height: 600px;"></div>
+        <div class="d-none d-xl-block d-xxl-none" style="height: 780px; margin-top: auto;"></div>
+        <div class="d-none d-lg-block d-xl-none" style="height: 700px; margin-top: auto;"></div>
+        <div class="d-none d-sm-block d-lg-none" style="height: 520px; margin-top: auto;"></div>
+        <div class="d-sm-none" style="height: 500px; margin-top: auto;"></div>
+      </div>
+    </section>
+
+      <!-- Strengths -->
+      <section class="container py-5 mt-2 mb-3 mt-sm-3 mb-sm-4 my-md-4 my-lg-5">
+        <div class="swiper pb-xxl-4 mb-xl-2" data-swiper-options='{
+          "slidesPerView": 1,
+          "spaceBetween": 24,
+          "pagination": {
+            "el": ".swiper-pagination",
+            "clickable": true
+          },
+          "breakpoints": {
+            "400": {
+              "slidesPerView": 2,
+              "spaceBetween": 24
+            },
+            "700": {
+              "slidesPerView": 3,
+              "spaceBetween": 30
+            },
+            "991": {
+              "slidesPerView": 4,
+              "spaceBetween": 40
+            }
+          }
+        }'>
+          <div class="swiper-wrapper">
+
+            <!-- Item -->
+            <div class="swiper-slide text-center text-sm-start">
+              <div class="text-primary mb-3 mb-sm-4">
+                <svg width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M37.7794 10.6909L20.2794 1.94092C20.1926 1.89757 20.097 1.875 20 1.875C19.903 1.875 19.8074 1.89757 19.7206 1.94092L2.22063 10.6909C2.11674 10.7428 2.02936 10.8227 1.96832 10.9215C1.90727 11.0203 1.87496 11.1341 1.87501 11.2503V28.7503C1.87437 28.867 1.90641 28.9815 1.96749 29.0809C2.02857 29.1803 2.11626 29.2606 2.22063 29.3128L19.7206 38.0628C19.8074 38.1061 19.903 38.1287 20 38.1287C20.097 38.1287 20.1926 38.1061 20.2794 38.0628L37.7794 29.3128C37.8838 29.2606 37.9714 29.1803 38.0325 29.0809C38.0936 28.9815 38.1256 28.867 38.125 28.7503V11.2503C38.1251 11.1341 38.0928 11.0203 38.0317 10.9215C37.9706 10.8227 37.8833 10.7428 37.7794 10.6909ZM20 19.3015L15.1144 16.8584L30.7306 8.56279L36.1056 11.2503L20 19.3015ZM10.1144 14.3584L25.7306 6.06279L29.3556 7.87529L13.7413 16.1722L10.1144 14.3584ZM9.37501 15.3865L13.125 17.2615V22.2415L11.6919 20.8084C11.5747 20.6912 11.4158 20.6253 11.25 20.6253H9.37501V15.3865ZM20 3.19904L24.3575 5.37529L8.74126 13.6722L3.89751 11.2503L20 3.19904ZM3.12501 12.2615L8.12501 14.7615V21.2503C8.12501 21.416 8.19086 21.575 8.30807 21.6922C8.42528 21.8094 8.58425 21.8753 8.75001 21.8753H10.9913L13.3081 24.1922C13.3955 24.2795 13.5069 24.339 13.6281 24.3632C13.7493 24.3873 13.875 24.3749 13.9892 24.3276C14.1034 24.2803 14.201 24.2002 14.2696 24.0974C14.3383 23.9947 14.375 23.8739 14.375 23.7503V17.8865L19.375 20.3865V36.489L3.12501 28.364V12.2615ZM20.625 36.489V20.3865L36.875 12.2615V28.364L20.625 36.489Z" fill="currentColor"></path>
+                </svg>
+              </div>
+              <h3 class="h5 mb-2 mb-sm-3">Broad Range of Commodities</h3>
+              <p class="fs-sm mb-0">We offer a comprehensive range of commodities, from oil products and fertilizers to wooden panels, ensuring that our clients have access to the best materials for their specific requirements.</p>
+            </div>
+
+            <!-- Item-->
+            <div class="swiper-slide text-center text-sm-start">
+              <div class="text-primary mb-3 mb-sm-4">
+                <svg width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M38 27.4c-1.5 3.5-4 6.6-7.2 8.7s-6.9 3.3-10.8 3.3c-3.3 0-6.5-.8-9.4-2.4-2.4-1.3-4.4-3.1-6-5.2v3.1c0 .2-.1.3-.2.4a.76.76 0 0 1-.4.2.76.76 0 0 1-.4-.2c-.1-.1-.2-.2-.2-.4V30c0-.2.1-.3.2-.4 0 0 .1 0 .1-.1h0s.1 0 .1-.1h.1 4.8c.2 0 .3.1.4.2a.76.76 0 0 1 .2.4.76.76 0 0 1-.2.4.76.76 0 0 1-.4.2H5.1c2.3 3.3 5.7 5.7 9.6 6.9 4.2 1.3 8.8 1 12.8-.8s7.3-5 9.1-9c1.9-4 2.2-8.5 1-12.8C36.4 10.7 33.7 7 30 4.6s-8.1-3.4-12.5-2.8C13.1 2.5 9.1 4.7 6.2 8s-4.5 7.6-4.5 12c0 .2-.1.3-.2.4a.76.76 0 0 1-.4.2c-.2 0-.3-.1-.4-.2s-.2-.2-.2-.4c0-3.8 1.1-7.6 3.3-10.8S9 3.5 12.6 2C16.1.6 20 .2 23.8 1s7.2 2.6 10 5.3c2.7 2.7 4.6 6.2 5.3 10 .7 3.7.3 7.6-1.1 11.1zm-14.1-3.8c0 1-.4 2-1.1 2.8-.6.5-1.3.9-2 1.1v.7c0 .2-.1.4-.2.5s-.3.2-.5.2-.4-.1-.5-.2-.2-.3-.2-.5v-.7a3.09 3.09 0 0 1-2-1.1c-.7-.7-1.1-1.7-1.1-2.8 0-.2.1-.4.2-.5s.3-.2.5-.2.4.1.5.2.2.3.2.5c0 .7.3 1.3.7 1.8.5.5 1.1.7 1.8.7s1.3-.3 1.8-.7c.5-.5.7-1.1.7-1.8s-.3-1.8-2.7-2.5c-3-.9-3.7-2.6-3.7-3.8 0-1 .4-2 1.1-2.8.6-.6 1.3-.9 2-1.1v-.7c0-.2.1-.4.2-.5s.3-.2.5-.2.4.1.5.2.2.3.2.5v.7a3.09 3.09 0 0 1 2 1.1c.7.7 1.1 1.7 1.1 2.8 0 .2-.1.4-.2.5s-.3.2-.5.2-.4-.1-.5-.2-.2-.3-.2-.5c0-.7-.3-1.3-.7-1.8-.5-.5-1.1-.7-1.8-.7s-1.3.3-1.8.7c-.5.5-.7 1.1-.7 1.8 0 .4 0 1.7 2.7 2.5 2.4.7 3.7 2 3.7 3.8z" fill="currentColor"></path>
+                </svg>
+              </div>
+              <h3 class="h5 mb-2 mb-sm-3">Proven Track Record</h3>
+              <p class="fs-sm mb-0">We pride ourselves on a history of excellence in every transaction, reflecting our deep commitment to delivering the highest standards in the commodities industry.</p>
+            </div>
+
+            <!-- Item -->
+            <div class="swiper-slide text-center text-sm-start">
+              <div class="text-primary mb-3 mb-sm-4">
+                <svg width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M33.6825 13.683C33.6825 6.12609 27.5564 0 19.9995 0C12.4426 0 6.31646 6.12609 6.31646 13.683C4.36283 13.9263 2.51562 15.2033 2.51562 18.168V25.3136C2.51562 28.6583 4.85694 29.8746 7.07663 29.8746H9.28111C9.70091 29.8746 10.0413 29.5342 10.0413 29.1144V14.3976C10.0413 13.9778 9.70091 13.6374 9.28111 13.6374H7.83679C7.83679 6.92018 13.2823 1.47472 19.9995 1.47472C26.7167 1.47472 32.1621 6.92018 32.1621 13.6374H30.7178C30.298 13.6374 29.9577 13.9778 29.9577 14.3976V29.0916C29.9577 29.5114 30.298 29.8518 30.7178 29.8518H32.1621C31.9493 35.0741 29.4407 36.298 24.4312 36.5184V36.0091C24.4312 35.1694 23.7506 34.4888 22.9109 34.4888H18.1295C17.2898 34.4888 16.6091 35.1694 16.6091 36.0091V38.4797C16.6091 39.3194 17.2898 40 18.1295 40H22.9261C23.7658 40 24.4464 39.3194 24.4464 38.4797V38.0388C29.2659 37.8183 33.4316 36.8225 33.6825 29.8062C35.6361 29.5629 37.4833 28.2858 37.4833 25.3212V18.1756C37.4833 15.1957 35.6437 13.9263 33.6825 13.683ZM8.52094 15.1045V28.3314H7.03862C5.91357 28.3314 3.99795 27.9361 3.99795 25.2908V18.1452C3.99795 15.5226 5.89077 15.1045 7.03862 15.1045H8.52094ZM22.9261 37.3318V38.4873H18.1295V36.0167H22.9261V37.3318ZM35.963 25.3136C35.963 27.9361 34.0702 28.3542 32.9223 28.3542H31.478V15.1577H32.9603C34.0854 15.1577 36.001 15.553 36.001 18.1984L35.963 25.3136Z" fill="currentColor"></path>
+                </svg>
+              </div>
+              <h3 class="h5 mb-2 mb-sm-3">Committed People</h3>
+              <p class="fs-sm mb-0">Our team at Nordic Element Trade is a blend of dedicated professionals and industry veterans. With a strong focus on innovation and quality, we continuously strive to enhance our services and products, reflecting our commitment to excellence in the commodities sector.</p>
+            </div>
+
+            <!-- Item -->
+            <div class="swiper-slide text-center text-sm-start">
+              <div class="text-primary mb-3 mb-sm-4">
+                <svg width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M33.6825 13.683C33.6825 6.12609 27.5564 0 19.9995 0C12.4426 0 6.31646 6.12609 6.31646 13.683C4.36283 13.9263 2.51562 15.2033 2.51562 18.168V25.3136C2.51562 28.6583 4.85694 29.8746 7.07663 29.8746H9.28111C9.70091 29.8746 10.0413 29.5342 10.0413 29.1144V14.3976C10.0413 13.9778 9.70091 13.6374 9.28111 13.6374H7.83679C7.83679 6.92018 13.2823 1.47472 19.9995 1.47472C26.7167 1.47472 32.1621 6.92018 32.1621 13.6374H30.7178C30.298 13.6374 29.9577 13.9778 29.9577 14.3976V29.0916C29.9577 29.5114 30.298 29.8518 30.7178 29.8518H32.1621C31.9493 35.0741 29.4407 36.298 24.4312 36.5184V36.0091C24.4312 35.1694 23.7506 34.4888 22.9109 34.4888H18.1295C17.2898 34.4888 16.6091 35.1694 16.6091 36.0091V38.4797C16.6091 39.3194 17.2898 40 18.1295 40H22.9261C23.7658 40 24.4464 39.3194 24.4464 38.4797V38.0388C29.2659 37.8183 33.4316 36.8225 33.6825 29.8062C35.6361 29.5629 37.4833 28.2858 37.4833 25.3212V18.1756C37.4833 15.1957 35.6437 13.9263 33.6825 13.683ZM8.52094 15.1045V28.3314H7.03862C5.91357 28.3314 3.99795 27.9361 3.99795 25.2908V18.1452C3.99795 15.5226 5.89077 15.1045 7.03862 15.1045H8.52094ZM22.9261 37.3318V38.4873H18.1295V36.0167H22.9261V37.3318ZM35.963 25.3136C35.963 27.9361 34.0702 28.3542 32.9223 28.3542H31.478V15.1577H32.9603C34.0854 15.1577 36.001 15.553 36.001 18.1984L35.963 25.3136Z" fill="currentColor"></path>
+                </svg>
+              </div>
+              <h3 class="h5 mb-2 mb-sm-3">Efficient Supply Chain</h3>
+              <p class="fs-sm mb-0">Our supply chain is the backbone of our operations, characterized by efficiency and security. We ensure timely delivery of products, employing state-of-the-art logistics and supply chain management techniques to provide secure and reliable transportation of commodities worldwide.</p>
+            </div>
+
+
+          </div>
+
+          <!-- Pagination (Bullets) -->
+          <div class="swiper-pagination position-relative bottom-0 pt-1 mt-4 d-lg-none"></div>
+        </div>
+      </section>
+
+
+      <!-- CEO's Quote -->
+
+      <section class="container pb-5 mb-lg-4 mb-xl-5">
+        <div class="tab-pane fade show active card border-0 bg-secondary" id="foster" role="tabpanel">
+            <div class="row py-2 py-sm-1 py-md-3 py-lg-4 py-xl-5 d-flex align-items-center">
+                <div class="col-md-4 col-lg-3 offset-lg-1 mb-3 mb-md-0 d-flex flex-column align-items-center">
+                    <img class="d-block rounded-circle mb-2" src="assets/img/Arthur-Quote-White.webp" width="200" alt="Artur">
+                    <h4 class="mb-1">Arthur</h4>
+                    <p class="fs-lg text-body-secondary mb-0">CEO</p>
+                </div>
+                <div class="col-md-8 col-lg-7">
+                    <p class="text-dark lead mb-0">“At Nordic Element Trade, our strength lies in our adaptability to meet our customers' specific needs. We tailor our product specifications to align with client requirements, offer global delivery, and provide flexible payment terms. Our dedication goes beyond just meeting expectations - we aim to exceed them, ensuring every client and stakeholder experiences the utmost satisfaction with our services.”</p>
+                </div>
+            </div>
+        </div>
+    </section> 
+
+    </main>
+ 
+    <!-- Footer-->
+    <my-footer></my-footer>
+  
+
+
+    <!-- Back to top button -->
+    <a class="btn-scroll-top" href="#top" data-scroll aria-label="Scroll back to top">
+      <svg viewBox="0 0 40 40" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="20" cy="20" r="19" fill="none" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10"></circle>
+      </svg>
+      <i class="ai-arrow-up"></i>
+    </a>
+
+
+    <!-- Vendor scripts: JS libraries and plugins -->
+    <script src="main.js"></script>
+    <script src="assets/vendor/jarallax/dist/jarallax.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/timezz/dist/timezz.js"></script>
+
+    <!-- Bootstrap + Theme scripts -->
+    <script src="assets/js/theme.min.js"></script>
+  </body>
+</html>

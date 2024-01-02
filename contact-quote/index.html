@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+  <head>
+    <meta charset="utf-8">
+
+    <!-- Viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover">
+    
+    <!-- SEO meta tags -->
+    <title>Request Quotes & Information | Nordic Element Trade</title>
+    <meta name="description" content="Reach out to Nordic Element Trade for inquiries or quotes on our global commodity solutions. Contact us via phone, email, or visit our Dubai office.">
+    <meta name="robots" content="noindex, nofollow">
+
+
+    <!-- Webmanifest + Favicon / App icons -->
+    <link rel="manifest" href="../manifest.json">
+    <link rel="icon" type="image/png" href="../assets/app-icons/icon-32x32.png" sizes="32x32">
+    <link rel="apple-touch-icon" href="../assets/app-icons/icon-180x180.png">
+        
+    <!-- Theme switcher (color modes) -->
+    <script src="../assets/js/theme-switcher.js"></script>
+
+    <!-- Import Google font (Inter) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet" id="google-font">
+
+    <!-- Vendor styles -->
+    <link rel="stylesheet" media="screen" href="../assets/vendor/leaflet/dist/leaflet.css">
+
+    <!-- Font icons -->
+    <link rel="stylesheet" href="../assets/icons/around-icons.min.css">
+
+    <!-- Theme styles + Bootstrap -->
+    <link rel="stylesheet" media="screen" href="../assets/css/theme.min.css">
+
+    <!-- Page loading styles -->
+    <style>
+      .page-loading {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        -webkit-transition: all .4s .2s ease-in-out;
+        transition: all .4s .2s ease-in-out;
+        background-color: #fff;
+        opacity: 0;
+        visibility: hidden;
+        z-index: 9999;
+      }
+      [data-bs-theme="dark"] .page-loading {
+        background-color: #121519;
+      }
+      .page-loading.active {
+        opacity: 1;
+        visibility: visible;
+      }
+      .page-loading-inner {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+        -webkit-transition: opacity .2s ease-in-out;
+        transition: opacity .2s ease-in-out;
+        opacity: 0;
+      }
+      .page-loading.active > .page-loading-inner {
+        opacity: 1;
+      }
+      .page-loading-inner > span {
+        display: block;
+        font-family: "Inter", sans-serif;
+        font-size: 1rem;
+        font-weight: normal;
+        color: #6f788b;
+      }
+      [data-bs-theme="dark"] .page-loading-inner > span {
+        color: #fff;
+        opacity: .6;
+      }
+      .page-spinner {
+        display: inline-block;
+        width: 2.75rem;
+        height: 2.75rem;
+        margin-bottom: .75rem;
+        vertical-align: text-bottom;
+        background-color: #d7dde2; 
+        border-radius: 50%;
+        opacity: 0;
+        -webkit-animation: spinner .75s linear infinite;
+        animation: spinner .75s linear infinite;
+      }
+      [data-bs-theme="dark"] .page-spinner {
+        background-color: rgba(255,255,255,.25);
+      }
+      @-webkit-keyframes spinner {
+        0% {
+          -webkit-transform: scale(0);
+          transform: scale(0);
+        }
+        50% {
+          opacity: 1;
+          -webkit-transform: none;
+          transform: none;
+        }
+      }
+      @keyframes spinner {
+        0% {
+          -webkit-transform: scale(0);
+          transform: scale(0);
+        }
+        50% {
+          opacity: 1;
+          -webkit-transform: none;
+          transform: none;
+        }
+      }
+    </style>
+
+    <!-- Page loading scripts -->
+    <script>
+      (function () {
+        window.onload = function () {
+          const preloader = document.querySelector('.page-loading')
+          preloader.classList.remove('active')
+          setTimeout(function () {
+            preloader.remove()
+          }, 1500)
+        }
+      })()
+    </script>
+  </head>
+
+
+  <!-- Body -->
+  <body>
+
+
+    <!-- Page loading spinner -->
+    <div class="page-loading active">
+      <div class="page-loading-inner">
+        <div class="page-spinner"></div>
+        <span>Loading...</span>
+      </div>
+    </div>
+
+
+    <!-- Page wrapper -->
+    <main class="page-wrapper">
+
+      <!-- Navbar. Remove 'fixed-top' class to make the navigation bar scrollable with the page -->
+      <my-header></my-header>
+
+
+      <!-- Page content-->
+      <section class="container pt-5 pb-lg-2 pb-xl-4 py-xxl-5 my-5">
+
+        <!-- Breadcrumb-->
+        <nav aria-label="breadcrumb">
+          <ol class="pt-lg-3 pb-lg-4 pb-2 breadcrumb">
+            <li class="breadcrumb-item"><a href="/">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Contacts Us</li>
+          </ol>
+        </nav>
+
+        <!-- Page title -->
+        <h1 class="display-2 pb-2 mb-sm-4 mb-lg-5">Get in Touch</h1>
+        <p>We value your interest in Nordic Element Trade. Whether you have a question, need more information, or want to request a quote, our team is ready to assist you. Fill out the form below or reach us through the provided contact details.</p>
+
+        <!-- Contact details -->
+        <div class="border-top pb-sm-3 pt-4">
+          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 pt-2">
+
+            <!-- Address -->
+            <!-- <div class="col pb-2">
+              <h4 class="mb-lg-4">Address</h4>
+              <p class="fs-lg fw-medium pb-3 mb-3">Dubai, Regal Tower, 1709</p>
+              <a class="btn btn-primary" href="https://www.google.com/maps/?q=25.186939000741624,55.26059784224006" target="_blank">
+                <i class="ai-map-pin me-1"></i>
+                Get directions
+              </a>
+            </div> -->
+
+            <!-- Phone -->
+            <div class="col pb-2">
+              <h4 class="mb-lg-4">Phone</h4>
+              <ul class="list-unstyled mb-0">
+                <li class="pb-1 mb-2">
+                  <!-- <span class="d-block fs-sm text-body-secondary mb-1">Main office</span> -->
+                  <a class="nav-link fs-lg p-0" href="tel:+178632256033">+1&nbsp;(786)&nbsp;322&nbsp;560&nbsp;33</a>
+                </li>
+                <!-- <li class="pb-1 mb-2">
+                  <span class="d-block fs-sm text-body-secondary mb-1">Reception room</span>
+                  <a class="nav-link fs-lg p-0" href="tel:+178630056044">+1&nbsp;(786)&nbsp;300&nbsp;560&nbsp;44</a>
+                </li>
+                <li>
+                  <span class="d-block fs-sm text-body-secondary mb-1">Franchise</span>
+                  <a class="nav-link fs-lg p-0" href="tel:+178630050055">+1&nbsp;(786)&nbsp;300&nbsp;500&nbsp;55</a>
+                </li> -->
+              </ul>
+            </div>
+
+            <!-- Email -->
+            <div class="col pb-2">
+              <h4 class="mb-lg-4">Email</h4>
+              <a class="nav-link fs-lg p-0" href="mailto:info@nordicelementtrade.com">info@nordicelementtrade.com</a>
+            </div>
+
+            <!-- Address -->
+            <div class="col pb-2">
+              <h4 class="mb-lg-4">Address</h4>
+              <a class="nav-link fs-lg p-0">Regal Tower, 1709, Dubai</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
+
+
+      <!-- Map-->
+      <section class="position-relative">
+        <div class="d-none d-xl-block" style="height: 570px;"></div>
+        <div class="d-none d-lg-block d-xl-none" style="height: 450px;"></div>
+        <div class="d-none d-md-block d-lg-none" style="height: 380px;"></div>
+        <div class="d-md-none" style="height:280px;"></div>
+        <div class="interactive-map position-absolute top-0 start-0 w-100 h-100" data-map-options='{
+          "center": [25.186939000741624, 55.26059784224006],
+          "zoom": 10,
+          "scrollWheelZoom": false,
+          "markers": [
+            {
+              "position": [25.186939000741624, 55.26059784224006],
+              "popup": "&lt;div class=&#39;p-3&#39;&gt;&lt;h6&gt;We are in Dubai&lt;/h6&gt;&lt;p class=&#39;fs-sm pt-1 mt-n3 mb-0&#39;&gt;Regal Tower, 1709, Dubai&lt;/p&gt;&lt;/div&gt;"
+            }
+          ]
+        }'></div>
+      </section>
+
+           <!-- Contact form -->
+<section class="bg-primary position-relative py-5" data-bs-theme="light">
+    <div class="bg-dark position-absolute top-0 start-0 w-100 h-100 opacity-5"></div>
+    <div class="position-absolute top-0 start-0 w-100 h-100 opacity-15" style="background-image: url(assets/img/landing/conference/noise.png); mix-blend-mode: soft-light;"></div>
+    <div class="container position-relative z-2 pt-sm-2 pb-3 py-md-4 py-lg-5">
+        <div class="row align-items-center">
+            <div class="col-md-6 col-lg-5 col-xxl-4 pb-2 pb-md-0 mb-4 mb-md-0">
+                <div class="text-warning pb-3 mb-1 mb-md-2 mb-lg-3">
+                    <!-- SVG icon content -->
+                </div>
+                <h2 class="display-5 text-light mb-4 mb-md-5">Let us know your requirements, and we'll provide you with a competitive quote.</h2>
+            </div>
+            <div class="col-md-6 offset-lg-1 offset-xxl-2">
+                <div class="card bg-white border-0 p-1 p-sm-2 p-lg-3">
+                    <form class="card-body needs-validation p-4" novalidate>
+                        <div class="row">
+                            <div class="col-sm-6 mb-4">
+                                <label class="form-label fs-base" for="name">Name</label>
+                                <input class="form-control form-control-lg" type="text" placeholder="Your name" required id="name">
+                                <div class="invalid-feedback">Please enter your name!</div>
+                            </div>
+                            <div class="col-sm-6 mb-4">
+                                <label class="form-label fs-base" for="last-name">Last Name</label>
+                                <input class="form-control form-control-lg" type="text" placeholder="Your last name" required id="last-name">
+                                <div class="invalid-feedback">Please enter your last name!</div>
+                            </div>
+                        </div>
+                        <div class="mb-4">
+                            <label class="form-label fs-base" for="email">Email</label>
+                            <input class="form-control form-control-lg" type="email" placeholder="Email address" required id="email">
+                            <div class="invalid-feedback">Please provide a valid email address!</div>
+                        </div>
+                        <div class="mb-4">
+                            <label class="form-label fs-base" for="phone">Phone Number</label>
+                            <input class="form-control form-control-lg" type="tel" placeholder="Phone number" required id="phone">
+                            <div class="invalid-feedback">Please provide a valid phone number!</div>
+                        </div>
+                        <div class="mb-4">
+                            <label class="form-label fs-base" for="message">Message</label>
+                            <textarea class="form-control form-control-lg" rows="5" placeholder="Your message" required id="message"></textarea>
+                            <div class="invalid-feedback">Please enter your message!</div>
+                        </div>
+                        <button class="btn btn-lg btn-warning" type="submit">Send request</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+      
+    </main>
+
+
+    <!-- Footer -->
+    <my-footer></my-footer>
+
+
+    <!-- Back to top button -->
+    <a class="btn-scroll-top" href="#top" data-scroll aria-label="Scroll back to top">
+      <svg viewBox="0 0 40 40" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="20" cy="20" r="19" fill="none" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10"></circle>
+      </svg>
+      <i class="ai-arrow-up"></i>
+    </a>
+
+
+    <!-- Vendor scripts: JS libraries and plugins -->
+    <script src="../main.js"></script>
+    <script src="../assets/vendor/leaflet/dist/leaflet.js"></script>
+
+    <!-- Bootstrap + Theme scripts -->
+    <script src="../assets/js/theme.min.js"></script>
+  </body>
+</html>

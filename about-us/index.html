@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+  <head>
+    <meta charset="utf-8">
+
+    <!-- Viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover">
+    
+    <!-- SEO meta tags -->
+    <title>Global Trade Experts in Oil, Fertilizers, Panels | Nordic Element Trade</title>
+    <meta name="description" content="Explore Nordic Element's trade solutions in oil, fertilizers, and wooden panels. Committed to quality, sustainability, and efficient global service.">
+    <meta name="robots" content="noindex, nofollow">
+
+
+    <!-- Webmanifest + Favicon / App icons -->
+    <link rel="manifest" href="../manifest.json">
+    <link rel="icon" type="image/png" href="../assets/app-icons/icon-32x32.png" sizes="32x32">
+    <link rel="apple-touch-icon" href="../assets/app-icons/icon-180x180.png">
+        
+    <!-- Theme switcher (color modes) -->
+    <script src="../assets/js/theme-switcher.js"></script>
+
+    <!-- Import Google font (Inter) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet" id="google-font">
+
+    <!-- Vendor styles -->
+    <link rel="stylesheet" media="screen" href="../assets/vendor/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" media="screen" href="../assets/vendor/lightgallery/css/lightgallery-bundle.min.css">
+
+    <!-- Font icons -->
+    <link rel="stylesheet" href="../assets/icons/around-icons.min.css">
+
+    <!-- Theme styles + Bootstrap -->
+    <link rel="stylesheet" media="screen" href="../assets/css/theme.min.css">
+
+    <!-- Page loading styles -->
+    <style>
+      .page-loading {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        -webkit-transition: all .4s .2s ease-in-out;
+        transition: all .4s .2s ease-in-out;
+        background-color: #fff;
+        opacity: 0;
+        visibility: hidden;
+        z-index: 9999;
+      }
+      [data-bs-theme="dark"] .page-loading {
+        background-color: #121519;
+      }
+      .page-loading.active {
+        opacity: 1;
+        visibility: visible;
+      }
+      .page-loading-inner {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+        -webkit-transition: opacity .2s ease-in-out;
+        transition: opacity .2s ease-in-out;
+        opacity: 0;
+      }
+      .page-loading.active > .page-loading-inner {
+        opacity: 1;
+      }
+      .page-loading-inner > span {
+        display: block;
+        font-family: "Inter", sans-serif;
+        font-size: 1rem;
+        font-weight: normal;
+        color: #6f788b;
+      }
+      [data-bs-theme="dark"] .page-loading-inner > span {
+        color: #fff;
+        opacity: .6;
+      }
+      .page-spinner {
+        display: inline-block;
+        width: 2.75rem;
+        height: 2.75rem;
+        margin-bottom: .75rem;
+        vertical-align: text-bottom;
+        background-color: #d7dde2; 
+        border-radius: 50%;
+        opacity: 0;
+        -webkit-animation: spinner .75s linear infinite;
+        animation: spinner .75s linear infinite;
+      }
+      [data-bs-theme="dark"] .page-spinner {
+        background-color: rgba(255,255,255,.25);
+      }
+      @-webkit-keyframes spinner {
+        0% {
+          -webkit-transform: scale(0);
+          transform: scale(0);
+        }
+        50% {
+          opacity: 1;
+          -webkit-transform: none;
+          transform: none;
+        }
+      }
+      @keyframes spinner {
+        0% {
+          -webkit-transform: scale(0);
+          transform: scale(0);
+        }
+        50% {
+          opacity: 1;
+          -webkit-transform: none;
+          transform: none;
+        }
+      }
+    </style>
+
+    <!-- Page loading scripts -->
+    <script>
+      (function () {
+        window.onload = function () {
+          const preloader = document.querySelector('.page-loading')
+          preloader.classList.remove('active')
+          setTimeout(function () {
+            preloader.remove()
+          }, 1500)
+        }
+      })()
+    </script>
+  </head>
+
+
+  <!-- Body -->
+  <body>
+
+
+    <!-- Page loading spinner -->
+    <div class="page-loading active">
+      <div class="page-loading-inner">
+        <div class="page-spinner"></div>
+        <span>Loading...</span>
+      </div>
+    </div>
+
+
+    <!-- Page wrapper -->
+    <main class="page-wrapper">
+
+    <my-header></my-header>
+
+
+      <!-- Hero -->
+      <section>
+        <div class="jarallax bg-dark min-vh-100 py-5" data-jarallax data-type="scroll-opacity" data-speed="0.7">
+          <div class="position-absolute top-0 start-0 w-100 h-100 bg-black opacity-10"></div>
+          <div class="jarallax-img" style="background-image: url(../assets/img/bg-about-us.webp);"></div>
+          <div class="container position-relative z-5 py-sm-4 py-lg-5 mt-4">
+
+            <!-- Text + button -->
+            <div class="row pt-lg-2 py-xl-4 py-xxl-5 mb-md-4 mb-lg-5">
+              <div class="col-md-10 col-lg-9 col-xl-8 col-xxl-7 pt-2 mb-5">
+                <h1 class="display-3 text-light text-uppercase pb-sm-2 pb-md-3">Bridging Global Commodities Markets</h1>
+                <!-- <p class="text-light opacity-70 pb-3 pb-md-4 mb-3" style="max-width: 520px;">Specializing in the supply of oil products, fertilizers, and wooden panels, we connect the world through efficient and sustainable trade solutions.</p> -->
+                <!-- <a class="btn btn-outline-light" href="#product-categories">Explore Our Products</a> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- About -->
+      <section class="container position-relative z-3">
+        <div class="row pt-5 mt-n2 mt-sm-0 mt-md-2 mt-lg-4 mt-xl-5">
+          <div class="col-md-6 col-lg-5">
+            <div class="fs-sm text-uppercase mb-3">About Us</div>
+            <h2 class="display-5 d-none d-lg-block">Connecting the world with essential commodities</h2>
+          </div>
+          <div class="col-md-6 pt-1 pt-sm-2 pt-md-5">
+            <p class="fs-xl">At Nordic Element Trade, we specialize in the global trade of vital commodities. Our portfolio includes essential oil products, fertilizers, and wooden panels, meeting the diverse needs of a global clientele.</p>
+            <p class="fs-xl">Our mission is centered on efficiently bridging the gap between producers and consumers across the world. We leverage our deep understanding of market dynamics to facilitate seamless trade operations, driven by a commitment to sustainability and quality.</p>
+            <p class="fs-xl mb-0">Our team, a collective of industry experts, is dedicated to providing tailored solutions. We focus on delivering services that align perfectly with the unique requirements of our diverse clientele, ensuring satisfaction and long-term partnerships.</p>
+          </div>
+        </div>
+      </section>
+
+
+
+  <!-- Our CEO -->
+  <div class="bg-dark pb-5">
+  <section class="container pt-5 mt-md-2 mt-lg-3 mt-xl-4 mt-xxl-5">
+    <div class="row mt-n2 mt-sm-0 mt-md-2 mt-lg-4 mt-xl-5">
+        <div class="col-md-6 col-lg-5">
+            <div class="fs-sm text-uppercase mb-3 text-light">Management</div>
+            <h2 class="display-5 d-none d-lg-block text-light">Our CEO</h2>
+            <div class="card card-hover border-0 rounded-1 overflow-hidden">
+                <img src="../assets/img/about-us/arthur-about.webp" alt="Image">
+                <div class="position-absolute top-0 start-0 w-100 h-100 opacity-0">
+                    <div class="bg-dark position-absolute top-0 start-0 w-100 h-100 opacity-50"></div>
+                    <div class="card-body d-flex flex-column justify-content-end h-100 position-relative z-2 text-center" data-bs-theme="dark">
+                        <h3 class="h5 mb-1">Arthur</h3>
+                        <p class="text-body mb-3">CEO</p>
+                        <div class="d-flex justify-content-center">
+                            <a class="btn btn-icon btn-sm btn-light btn-facebook rounded-circle mx-2" href="#" aria-label="Facebook">
+                                <i class="ai-facebook"></i>
+                            </a>
+                            <a class="btn btn-icon btn-sm btn-light btn-x rounded-circle mx-2" href="#" aria-label="X">
+                                <i class="ai-instagram"></i>
+                            </a>
+                            <a class="btn btn-icon btn-sm btn-light btn-linkedin rounded-circle mx-2" href="#" aria-label="LinkedIn">
+                                <i class="ai-linkedin"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Vertically Centered Paragraph Column -->
+        <div class="col-md-6 pt-1 pt-sm-2 pt-md-5 d-flex align-items-center justify-content-center">
+            <div class="text-align: left" style="max-width: 600px;"> <!-- Adjust max-width as needed -->
+                <p class="fs-xl">"As CEO of Nordic Element Trade, I am committed to leading our company with a vision centered around customer satisfaction. Our goal is not just to meet your needs but to exceed them, offering customized products and flexible services that set us apart in the commodities market. We are here to forge lasting relationships built on trust, efficiency, and excellence."</p>
+
+            </div>
+        </div>
+    </div>
+  </section>
+  </div>
+
+
+  <!-- Benefits Section -->
+  <div class="pb-5">
+    <section class="container pt-4 mt-md-2 mt-lg-3 mt-xl-4 mt-xxl-5">
+      <div class="row mt-n2 mt-sm-0 mt-md-2 mt-lg-4 mt-xl-5">
+          <div class="col-md-6 col-lg-5">
+              <div class="fs-sm text-uppercase mb-3">Benefits</div>
+              <h2 class="display-5 d-none d-lg-block">Why choose us</h2>
+          </div>
+      </div>
+
+      <!-- Benefits Cards -->
+      <div class="row">
+          <!-- Card 1 -->
+          <div class="col-md-3">
+              <div class="card bg-primary bg-opacity-10 border-0 mb-4">
+                  <div class="card-body">
+                      <i class="ai-grid fs-1 text-primary d-block mb-3"></i>
+                      <h3 class="h4" style="max-width: 180px;">Broad Range of Commodities</h3>
+                      <p class="card-text fs-sm">Comprehensive selection including oil products, fertilizers, and wooden panels to meet diverse client requirements.</p>
+                  </div>
+              </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="col-md-3">
+              <div class="card border-0 bg-primary" data-bs-theme="dark">
+                  <div class="card-body">
+                      <i class="ai-award fs-1 text-warning d-block mb-3"></i>
+                      <h3 class="h4" style="max-width: 180px;">Proven Track Record</h3>
+                      <p class="card-text fs-sm">History of excellence in transactions, showcasing commitment to high standards in the commodities industry.</p>
+                  </div>
+              </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="col-md-3">
+              <div class="card border-0 bg-primary bg-opacity-10">
+                  <div class="card-body">
+                      <i class="ai-user-group fs-1 text-primary d-block mb-3"></i>
+                      <h3 class="h4" style="max-width: 180px;">Committed People</h3>
+                      <p class="card-text fs-sm">Our team comprises dedicated professionals and industry veterans, focused on innovation and quality in the commodities sector.</p>
+                  </div>
+              </div>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="col-md-3">
+            <div class="card border-0 bg-primary" data-bs-theme="dark">
+                  <div class="card-body">
+                      <i class="ai-planet fs-1 text-warning d-block mb-3"></i>
+                      <h3 class="h4" style="max-width: 180px;">Efficient Supply Chain</h3>
+                      <p class="card-text fs-sm">Ensuring timely delivery through advanced supply chain management for reliable global transportation of commodities.</p>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+</div>
+           
+    </main>
+
+    <!-- Footer -->
+    <my-footer></my-footer>
+
+
+    <!-- Back to top button -->
+    <a class="btn-scroll-top" href="#top" data-scroll aria-label="Scroll back to top">
+      <svg viewBox="0 0 40 40" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="20" cy="20" r="19" fill="none" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10"></circle>
+      </svg>
+      <i class="ai-arrow-up"></i>
+    </a>
+
+
+    <!-- Vendor scripts: JS libraries and plugins -->
+    <script src="../main.js"></script>
+    <script src="../assets/vendor/jarallax/dist/jarallax.min.js"></script>
+    <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="../assets/vendor/lightgallery/lightgallery.min.js"></script>
+    <script src="../assets/vendor/lightgallery/plugins/fullscreen/lg-fullscreen.min.js"></script>
+    <script src="../assets/vendor/lightgallery/plugins/zoom/lg-zoom.min.js"></script>
+
+
+    <!-- Bootstrap + Theme scripts -->
+    <script src="../assets/js/theme.min.js"></script>
+  </body>
+</html>
