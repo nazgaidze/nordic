@@ -69,7 +69,7 @@ class MyHeader extends HTMLElement {
           </li>
             </ul>
             <div class="d-sm-none p-3 mt-n3">
-              <a class="btn btn-primary w-100 rounded-0 mb-1" href="/contact-quote" target="_blank">
+              <a class="btn btn-primary w-100 rounded-0 mb-1" href="/contact-quote">
                 Request a Quote
               </a>
             </div>
