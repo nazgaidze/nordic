@@ -24,7 +24,7 @@ class MyHeader extends HTMLElement {
             </label>
           </div>
 
-          <a class="btn btn-primary btn-sm fs-sm rounded-0 order-lg-3 d-none d-sm-inline-flex" href="/contact-quote/" rel="noopener">
+          <a class="btn btn-primary btn-sm fs-sm rounded-0 order-lg-3 d-none d-sm-inline-flex" href="/contact-quote/">
             Request a Quote
           </a>
 
@@ -69,7 +69,7 @@ class MyHeader extends HTMLElement {
           </li>
             </ul>
             <div class="d-sm-none p-3 mt-n3">
-              <a class="btn btn-primary w-100 rounded-0 mb-1" href="/contact-quote" target="_blank" rel="noopener">
+              <a class="btn btn-primary w-100 rounded-0 mb-1" href="/contact-quote" target="_blank">
                 Request a Quote
               </a>
             </div>
