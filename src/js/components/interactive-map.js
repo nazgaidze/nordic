@@ -46,10 +46,10 @@ export default (() => {
           const iconUrl = markers[n].iconUrl,
             shadowUrl = markers[n].shadowUrl,
             markerIcon = L.icon({
-              iconUrl: iconUrl || 'assets/img/map/marker-icon.png',
+              iconUrl: iconUrl || '../../../assets/img/map/marker-icon.png',
               iconSize: [30, 43],
               iconAnchor: [14, 43],
-              shadowUrl: shadowUrl || 'assets/img/map/marker-shadow.png',
+              shadowUrl: shadowUrl || '../../../assets/img/map/marker-shadow.png',
               shadowSize: [41, 41],
               shadowAnchor: [13, 41],
               popupAnchor: [1, -40],
