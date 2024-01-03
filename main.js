@@ -84,44 +84,44 @@ class MyHeader extends HTMLElement {
 
   class MyFooter extends HTMLElement {
     connectedCallback() {
-      this.innerHTML = `
-      <footer class="footer bg-dark position-relative py-4 py-md-5">
-      <div class="d-none d-dark-mode-block position-absolute top-0 start-0 w-100 h-100" style="background-color: rgba(255,255,255, .03);"></div>
-      <div class="container position-relative z-2 pt-4 pt-md-2 pt-xl-4 pt-xxl-5" data-bs-theme="dark">
-          <div class="row py-md-3 mb-4 mb-md-5">
-              <div class="col-md-7 col-lg-6 col-xxl-5 mb-sm-4 mb-md-0">
-                  <h2 class="display-4 mb-4 mb-md-5">Get in touch to find out more</h2>
-                  <div class="d-sm-flex align-items-center">
-                      <a class="btn btn-lg btn-primary rounded-0 me-sm-3 me-lg-4" href="/contact-quote/">Contact Us</a>
-                      <p class="text-body fs-sm py-3 py-sm-0 ps-sm-2 mb-0">Let's discuss your needs</p>
-                  </div>
-              </div>
-              <div class="col-md-5 col-lg-6 col-xxl-7 d-flex justify-content-end">
-                  <div>
-                      <div class="nav flex-column mb-3 mb-sm-4">
-                          <a class="nav-link py-1 px-0" href="mailto:info@nordicelementtrade.com">info@nordicelementtrade.com</a>
-                          <a class="nav-link py-1 px-0" href="tel:+15262200444">+&nbsp;1&nbsp;526&nbsp;220&nbsp;0444</a>
-                          <a class="nav-link py-1 px-0" href="tel:+15262200000">+&nbsp;1&nbsp;526&nbsp;220&nbsp;0000</a>
-                      </div>
-                      <div class="nav">
-                          <a class="btn btn-icon btn-sm btn-secondary btn-linkedin rounded-circle" href="#" aria-label="LinkedIn">
-                              <i class="ai-linkedin"></i>
-                          </a>
-                      </div>
-                  </div>
-              </div>
-          </div>
-          <div class="nav d-block d-md-flex align-items-center justify-content-between text-center text-md-start">
-            <p class="fs-sm mb-0">
-              <span class="text-body-secondary">&copy; All rights reserved.
-                  <a class="text-decoration-none py-1 px-0" href="privacy-policy/">Privacy policy</a>
-              </span>
-          </p>          
-          </div>
-      </div>
-  </footer>
-      `
+        this.innerHTML = `
+        <footer class="footer bg-dark position-relative py-4 py-md-5">
+            <div class="d-none d-dark-mode-block position-absolute top-0 start-0 w-100 h-100" style="background-color: rgba(255,255,255, .03);"></div>
+            <div class="container position-relative z-2 pt-4 pt-md-2 pt-xl-4 pt-xxl-5" data-bs-theme="dark">
+                <div class="row py-md-3 mb-4 mb-md-5">
+                    <div class="col-md-7 col-lg-6 col-xxl-5 mb-sm-4 mb-md-0">
+                        <h2 class="display-4 mb-4 mb-md-5">Get in touch to find out more</h2>
+                        <div class="d-sm-flex align-items-center">
+                            <a class="btn btn-lg btn-primary rounded-0 me-sm-3 me-lg-4" href="/contact-quote/">Contact Us</a>
+                            <p class="text-body fs-sm py-3 py-sm-0 ps-sm-2 mb-0">Let's discuss your needs</p>
+                        </div>
+                    </div>
+                    <div class="col-md-5 col-lg-6 col-xxl-7">
+                        <div class="d-flex flex-column align-items-start align-items-md-end">
+                            <div class="nav flex-column mb-3 mb-sm-4">
+                                <a class="nav-link py-1 px-0" href="mailto:info@nordicelementtrade.com">info@nordicelementtrade.com</a>
+                                <a class="nav-link py-1 px-0" href="tel:+15262200444">+ 1 526 220 0444</a>
+                                <a class="nav-link py-1 px-0" href="tel:+15262200000">+ 1 526 220 0000</a>
+                                <br>
+                                <a class="btn btn-icon btn-sm btn-secondary btn-linkedin rounded-circle" href="#" aria-label="LinkedIn">
+                                <i class="ai-linkedin"></i>
+                            </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="nav d-block d-md-flex align-items-center justify-content-between text-center text-md-start">
+                    <p class="fs-sm mb-0">
+                        <span class="text-body-secondary">&copy; All rights reserved.
+                            <a class="text-decoration-none py-1 px-0" href="privacy-policy/">Privacy policy</a>
+                        </span>
+                    </p>          
+                </div>
+            </div>
+        </footer>
+        `;
     }
-  }
-  
-  customElements.define('my-footer', MyFooter)
+}
+
+customElements.define('my-footer', MyFooter);
+
