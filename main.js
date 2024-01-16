@@ -8,7 +8,7 @@ class MyHeader extends HTMLElement {
           <a class="navbar-brand pe-sm-3" href="/">
           <span class="text-primary flex-shrink-0 me-2">
             <!-- Replace this SVG with an img tag for your WebP logo -->
-            <img src="/assets/img/logo.webp" alt="Logo" width="150px">
+            <img src="/assets/img/logo.png" alt="Logo" width="170px">
           </span>
         </a>
         
@@ -99,9 +99,10 @@ class MyHeader extends HTMLElement {
                     <div class="col-md-5 col-lg-6 col-xxl-7">
                         <div class="d-flex flex-column align-items-start align-items-md-end">
                             <div class="nav flex-column mb-3 mb-sm-4">
-                                <a class="nav-link py-1 px-0" href="mailto:info@nordicelementtrade.com">info@nordicelementtrade.com</a>
-                                <a class="nav-link py-1 px-0" href="tel:+15262200444">+ 1 526 220 0444</a>
-                                <a class="nav-link py-1 px-0" href="tel:+15262200000">+ 1 526 220 0000</a>
+                            <a class="nav-link py-1 px-0" href="mailto:info@nordicelementtrade.com" style="display: inline-flex; align-items: center;">
+                            <span class="ai-mail" style="margin-right: 5px;"></span>
+                            info@nordicelementtrade.com</a>                        
+                                <a class="nav-link py-1 px-0" href="https://wa.me/971522328851" style="display: inline-flex; align-items: center;"> <span class="ai-whatsapp" style="margin-right: 5px;"></span>+971 522328851</a>
                                 <br>
                                 <a class="btn btn-icon btn-sm btn-secondary btn-linkedin rounded-circle" href="#" aria-label="LinkedIn">
                                 <i class="ai-linkedin"></i>
@@ -113,7 +114,7 @@ class MyHeader extends HTMLElement {
                 <div class="nav d-block d-md-flex align-items-center justify-content-between text-center text-md-start">
                     <p class="fs-sm mb-0">
                         <span class="text-body-secondary">&copy; All rights reserved.
-                            <a class="text-decoration-none py-1 px-0" href="privacy-policy/">Privacy policy</a>
+                            <a class="text-decoration-none py-1 px-0" href="../privacy-policy/">Privacy policy</a>
                         </span>
                     </p>          
                 </div>
