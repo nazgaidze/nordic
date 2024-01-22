@@ -289,37 +289,35 @@
                         <button class="btn btn-lg btn-warning" type="submit">Send request</button>
                     </form> -->
 
-                    <form action="https://forms.zohopublic.eu/nordicelementtrade/form/ContactUs/formperma/ALX-YPBXwoEiX2muJ3ySi5kCEiV-CU0U2_kIsMrcChM/htmlRecords/submit" 
-                    class="card-body needs-validation p-4" 
-                    name="form" 
-                    id="form" 
-                    method="POST" 
-                    accept-charset="UTF-8" 
-                    enctype="multipart/form-data" 
+                    <form action="https://forms.zohopublic.eu/nordicelementtrade/form/ContactUs/formperma/ALX-YPBXwoEiX2muJ3ySi5kCEiV-CU0U2_kIsMrcChM/htmlRecords/submit"
+                    class="card-body needs-validation p-4"
+                    name="form"
+                    id="form"
+                    method="POST"
+                    accept-charset="UTF-8"
+                    enctype="multipart/form-data"
                     novalidate>
               
                   <input type="hidden" name="zf_referrer_name" value="">
                   <input type="hidden" name="zf_redirect_url" value="">
                   <input type="hidden" name="zc_gad" value="">
               
-                  <h2>Contact Us</h2>
-                  
+                  <!-- <h2>Contact Us</h2> -->
+              
                   <!-- Full Name -->
                   <div class="mb-4">
-                      <label class="form-label fs-base" for="name-first">First Name <em>*</em></label>
-                      <input class="form-control form-control-lg" type="text" maxlength="255" name="Name_First" id="name-first" placeholder="Your first name" required>
-                      <div class="invalid-feedback">Please enter your first name!</div>
-                  </div>
-                  <div class="mb-4">
-                      <label class="form-label fs-base" for="name-last">Last Name <em>*</em></label>
-                      <input class="form-control form-control-lg" type="text" maxlength="255" name="Name_Last" id="name-last" placeholder="Your last name" required>
-                      <div class="invalid-feedback">Please enter your last name!</div>
+                      <label class="form-label fs-base" for="name-first-last">Full Name <em>*</em></label>
+                      <div style="display: flex; justify-content: space-between;">
+                          <input class="form-control form-control-lg" type="text" maxlength="255" name="Name_First" id="name-first" placeholder="Your first name" required>&nbsp
+                          <input class="form-control form-control-lg" type="text" maxlength="255" name="Name_Last" id="name-last" placeholder="Your last name" required>
+                      </div>
+                      <div class="invalid-feedback">Please enter your full name!</div>
                   </div>
               
                   <!-- Email -->
                   <div class="mb-4">
                       <label class="form-label fs-base" for="email">Email <em>*</em></label>
-                      <input class="form-control form-control-lg" type="text" maxlength="255" name="Email" id="email" placeholder="Email address" required>
+                      <input class="form-control form-control-lg" type="text" maxlength="255" name="Email" id="email" placeholder="Your email address" required>
                       <div class="invalid-feedback">Please provide a valid email address!</div>
                   </div>
               
@@ -327,10 +325,9 @@
                   <div class="mb-4">
                       <label class="form-label fs-base" for="phone-code">Phone <em>*</em></label>
                       <div style="display: flex; justify-content: space-between;">
-                        <input class="form-control form-control-lg" type="text" name="PhoneNumber_countrycodeval" maxlength="4" id="phone-code" placeholder="Code" required style="width: 20%; text-align: left;">
-                        <input class="form-control form-control-lg" type="text" name="PhoneNumber_countrycode" maxlength="20" id="phone-number" placeholder="Your phone number" required style="width: 80%;">
-                    </div>
-                    
+                          <input class="form-control form-control-lg" type="text" name="PhoneNumber_countrycodeval" maxlength="4" id="phone-code" placeholder="+971" required style="width: 20%; text-align: left;">&nbsp
+                          <input class="form-control form-control-lg" type="text" name="PhoneNumber_countrycode" maxlength="20" id="phone-number" placeholder="Your phone number" required style="width: 80%;">
+                      </div>
                   </div>
               
                   <!-- Message -->
@@ -342,6 +339,7 @@
               
                   <button class="btn btn-lg btn-warning" type="submit">Submit</button>
               </form>
+              
               
 
 
