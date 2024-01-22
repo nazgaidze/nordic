@@ -258,7 +258,7 @@
             </div>
             <div class="col-md-6 offset-lg-1 offset-xxl-2">
                 <div class="card bg-white border-0 p-1 p-sm-2 p-lg-3">
-                    <form class="card-body needs-validation p-4" novalidate>
+                    <!-- <form class="card-body needs-validation p-4" novalidate>
                         <div class="row">
                             <div class="col-sm-6 mb-4">
                                 <label class="form-label fs-base" for="name">First Name</label>
@@ -287,7 +287,53 @@
                             <div class="invalid-feedback">Please enter your message!</div>
                         </div>
                         <button class="btn btn-lg btn-warning" type="submit">Send request</button>
-                    </form>
+                    </form> -->
+
+                    <form action="https://forms.zohopublic.eu/nordicelementtrade/form/ContactUs/formperma/ALX-YPBXwoEiX2muJ3ySi5kCEiV-CU0U2_kIsMrcChM/htmlRecords/submit" 
+      class="card-body needs-validation p-4" 
+      name="form" 
+      id="form" 
+      method="POST" 
+      accept-charset="UTF-8" 
+      enctype="multipart/form-data" 
+      novalidate>
+
+    <input type="hidden" name="zf_referrer_name" value="">
+    <input type="hidden" name="zf_redirect_url" value="">
+    <input type="hidden" name="zc_gad" value="">
+    
+    <!-- <h2>Contact Us</h2> -->
+    <div class="row">
+        <div class="col-sm-6 mb-4">
+            <label class="form-label fs-base" for="name-first">First Name <em>*</em></label>
+            <input class="form-control form-control-lg" type="text" maxlength="255" name="Name_First" id="name-first" placeholder="Your first name" required>
+            <div class="invalid-feedback">Please enter your first name!</div>
+        </div>
+        <div class="col-sm-6 mb-4">
+            <label class="form-label fs-base" for="name-last">Last Name <em>*</em></label>
+            <input class="form-control form-control-lg" type="text" maxlength="255" name="Name_Last" id="name-last" placeholder="Your last name" required>
+            <div class="invalid-feedback">Please enter your last name!</div>
+        </div>
+    </div>
+    <div class="mb-4">
+        <label class="form-label fs-base" for="email">Email <em>*</em></label>
+        <input class="form-control form-control-lg" type="text" maxlength="255" name="Email" id="email" placeholder="Email address" required>
+        <div class="invalid-feedback">Please provide a valid email address!</div>
+    </div>
+    <div class="mb-4">
+        <label class="form-label fs-base" for="phone">Phone Number</label>
+        <input class="form-control form-control-lg" type="text" name="PhoneNumber_countrycode" maxlength="20" id="phone" placeholder="Phone number">
+        <div class="invalid-feedback">Please provide a valid phone number!</div>
+    </div>
+    <div class="mb-4">
+        <label class="form-label fs-base" for="message">Message <em>*</em></label>
+        <textarea class="form-control form-control-lg" name="MultiLine" maxlength="65535" id="message" rows="5" placeholder="Your message" required></textarea>
+        <div class="invalid-feedback">Please enter your message!</div>
+    </div>
+    <button class="btn btn-lg btn-warning" type="submit">Submit</button>
+</form>
+
+
                 </div>
             </div>
         </div>
